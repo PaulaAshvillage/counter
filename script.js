@@ -1,4 +1,6 @@
-// Count Event: Click  arewhite, space or enter main)
+//immer am Anfang :
+"use strict";
+//to do: just enter and whitespace!
 const main = document.querySelector("main");
 const btn = document.querySelector(".btn");
 const displayedCounter = document.querySelector("#counter");
@@ -36,4 +38,9 @@ function reset() {
 }
 btn.addEventListener("click", reset);
 main.addEventListener("click", count);
-document.addEventListener("keydown", count);
+document.addEventListener("keyup", (event) => {
+  //hier funktioniert es nur mit event.code im Falle von White Space, why?
+  if (event.key === "Enter" || event.code === "Space") {
+    count();
+  }
+});
