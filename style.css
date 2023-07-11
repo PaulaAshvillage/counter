@@ -4,7 +4,6 @@
 
 body {
   font-family: monospace;
-  margin: 0px;
 }
 h1 {
   font-size: 54px;
@@ -16,7 +15,7 @@ h1 {
   padding-block: 20px;
   font-size: 24px;
 }
-.btn {
+#btn {
   font-family: inherit;
   cursor: pointer;
   border: 2px solid black;
@@ -32,7 +31,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid green 3px;
 }
 #counter {
   font-size: 100px;

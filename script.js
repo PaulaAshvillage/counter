@@ -1,26 +1,22 @@
-//immer am Anfang :
 "use strict";
-//to do: just enter and whitespace!
+
 const main = document.querySelector("main");
-const btn = document.querySelector(".btn");
+const btn = document.querySelector("#btn");
 const displayedCounter = document.querySelector("#counter");
 
 let countingNumber = 0;
 function count() {
   countingNumber++;
-
-  //display it:
   displayedCounter.innerText = countingNumber;
   main.style.background =
-    "linear-gradient(to right, #ffd700 " +
+    "linear-gradient(to right, #ffd700   " +
     countingNumber +
-    "%, #ffffff " +
+    "% ,#ffffff " +
     countingNumber +
     "% 100%)";
   if (countingNumber > 100) {
     let newNumber = 0;
     newNumber = countingNumber.toString().slice(-2);
-    console.log(newNumber);
 
     main.style.background =
       "linear-gradient(to right, #ffd700 " +
